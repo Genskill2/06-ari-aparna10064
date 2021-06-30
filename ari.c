@@ -8,36 +8,36 @@ string ari(string);
 
 int main(void)
 {
- float ari;
+ float aris;
  string grade;
  string ari;
-  if(ari == 1)
+  if(aris == 1)
    grade = "Kindergarten";
-  if(ari == 2)
+  if(aris == 2)
    grade = "First/Second Grade";
-  if(ari == 3)
+  if(aris == 3)
    grade = "Third Grade";
-  if(ari == 4)
+  if(aris == 4)
    grade = "Fourth Grade";
-  if(ari == 5)
+  if(aris == 5)
    grade = "Fifth Grade";
-  if(ari == 6)
+  if(aris == 6)
    grade = "Sixth Grade";
-  if(ari == 7)
+  if(aris == 7)
    grade = "Seventh Grade";
-  if(ari == 8)
+  if(aris == 8)
    grade = "Eighth Grade";
-  if(ari == 9)
+  if(aris == 9)
    grade = "Ninth Grade";
-  if(ari == 10)
+  if(aris == 10)
    grade = "Tenth Grade";
-   if(ari == 11)
+   if(aris == 11)
    grade = "Eleventh Grade";
-   if(ari == 12)
+   if(aris == 12)
    grade = "Twelfth Grade";
-   if(ari == 13)
+   if(aris == 13)
    grade = "College student";
-    if(ari == 14)
+    if(aris == 14)
    grade = "Professor";
 return grade;
 }
@@ -59,7 +59,7 @@ string ari(string s)
   {
     sen +=1;
   }
-  ari = 4.71 * (chara/words) + 0.5 * (words/sen) - 21.43;
+  aris = 4.71 * (chara/words) + 0.5 * (words/sen) - 21.43;
   int score = round(ari);
   }
    
