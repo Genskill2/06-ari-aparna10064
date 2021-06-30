@@ -4,64 +4,58 @@
 #include<math.h>
 #include <cs50.h>
 
-string ari(string);
-
-int main(void)
-{
- float aris;
- string grade;
- string ari;
-  if(score == 1)
-   grade = "Kindergarten";
-  if(score == 2)
-   grade = "First/Second Grade";
-  if(score== 3)
-   grade = "Third Grade";
-  if(score == 4)
-   grade = "Fourth Grade";
-  if(score == 5)
-   grade = "Fifth Grade";
-  if(score== 6)
-   grade = "Sixth Grade";
-  if(score == 7)
-   grade = "Seventh Grade";
-  if(score == 8)
-   grade = "Eighth Grade";
-  if(score == 9)
-   grade = "Ninth Grade";
-  if(score == 10)
-   grade = "Tenth Grade";
-   if(score == 11)
-   grade = "Eleventh Grade";
-   if(score== 12)
-   grade = "Twelfth Grade";
-   if(score == 13)
-   grade = "College student";
-    if(score == 14)
-   grade = "Professor";
-return grade;
-}
-
 string ari(string s)
 {
-  string chara,words,sen;
-  float ari;
+  int chara =0, words=0,sen=0, ari_total=0;
+  float a1,a2;
   s = get_string();
   for(int i=0; i<=strlen(s) ; i++)
   {
-  if(isalnum(s[i])
-  {
-    chara += 1;
-  }
+   if(isalnum(s[i])
+    {
+     chara ++ ;
+    }
   if(s[i] == " ")
-  {
-    words += 1;
-  }
+   {
+     words ++;
+   }
   if(s[i] == '.' || s[i] == '?' || s[i] == ',' )
-  {
-    sen += 1;
+   {
+     sen ++;
+   }
   }
-  aris = 4.71 * (chara/words) + 0.5 * (words/sen) - 21.43;
-  int score = round(aris);
-  }
-  }
+  a1 = 4.71 * (chara/words) 
+  a2 = (0.5 * (words/sen)) - 21.43;
+  ari_total = ceil(a1+a2);
+ 
+switch(ari_total){
+ case 1:
+  return " "Kindergarten";
+    case 2:
+        return "First/Second Grade";
+    case 3:
+        return "Third Grade";
+    case 4:
+        return "Fourth Grade";
+    case 5:
+        return "Fifth Grade";
+    case 6:
+        return "Sixth Grade";
+    case 7:
+        return "Seventh Grade";
+    case 8:
+        return "Eight Grade";
+    case 9:
+        return "Ninth Grade";
+    case 10:
+        return "Tenth Grade";
+    case 11:
+        return "Eleventh Grade";
+    case 12:
+        return "Twelfth Grade";
+    case 13:
+        return "College student";
+    case 14:
+        return "Professor";
+    }
+}
