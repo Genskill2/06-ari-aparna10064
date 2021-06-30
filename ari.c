@@ -8,19 +8,19 @@ string ari(string s)
 {
   int chara = 0, words = 0, sen = 0, ari_total;
   float a1,a2;
-  for(int i=0; i<=strlen(s) ; i++)
+  for(int i=0; i < strlen(s) ; i++)
   {
    if(isalnum(s[i]))
     {
-     chara ++ ;
+     chara++ ;
     }
-  if(s[i] == " ")
+  if(s[i] ==' ')
    {
-     words ++;
+     words++;
    }
   if(s[i] == '.' || s[i] == '?' || s[i] == ',' )
    {
-     sen ++;
+     sen++;
    }
   }
   a1 = 4.71 * (chara/words) ;
