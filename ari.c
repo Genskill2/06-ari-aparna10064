@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include<math.h>
+#include <math.h>
 #include <cs50.h>
 
 string ari(string s)
@@ -11,23 +11,23 @@ string ari(string s)
   for(int i=0; i < strlen(s) ; i++)
   {
    if(isalnum(s[i]))
+     {
+      chara++;
+     }
+   if(s[i] ==' ')
     {
-     chara++ ;
+      words++;
     }
-  if(s[i] ==' ')
-   {
-     words++;
-   }
-  if(s[i] == '.' || s[i] == '?' || s[i] == ',' )
-   {
-     sen++;
-   }
+   if(s[i] == '.' || s[i] == '?' || s[i] == ',' )
+    {
+      sen++;
+    }
   }
-  a1 = 4.71 * (chara/words) ;
+  a1 = 4.71 * (chara/words);
   a2 = (0.5 * (words/sen)) - 21.43;
-  ari_total = ceil(a1+a2);
+  ari_total = ceil(a1 + a2);
  
-switch(ari_total){
+switch (ari_total) {
  case 1:
   return "Kindergarten";
  case 2:
