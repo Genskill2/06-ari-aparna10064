@@ -24,34 +24,19 @@ string ari(string s)
   }
   ari_total = ceil( 4.71 * ((float)chara/words) + 0.5*((float)words/sen) - 21.43) ;
  
-switch (ari_total) {
- case 1:
-  return "Kindergarten";
- case 2:
-  return "First/Second Grade";
- case 3:
-  return "Third Grade";
- case 4:
-  return "Fourth Grade";
- case 5:
-  return "Fifth Grade";
- case 6:
-  return "Sixth Grade";
- case 7:
-  return "Seventh Grade";
- case 8:
-  return "Eight Grade";
- case 9:
-  return "Ninth Grade";
- case 10:
-  return "Tenth Grade";
- case 11:
-  return "Eleventh Grade";
- case 12:
-  return "Twelfth Grade";
- case 13:
-  return "College student";
- case 14:
-  return "Professor";
+if (ari_total==1){return "Kindergarten";}
+        else if (ari_total==2){return "First/Second Grade";}
+        else if (ari_total==3){return "Third Grade";}
+        else if (ari_total==4){return "Fourth Grade";}
+        else if (ari_total==5){return "Fifth Grade";}
+        else if (ari_total==6){return "Sixth Grade";}
+        else if (ari_total==7){return "Seventh Grade";}
+        else if (ari_total==8){return "Eighth Grade";}
+        else if (ari_total==9){return "Ninth Grade";}
+        else if (ari_total==10){return "Tenth Grade";}
+        else if (ari_total==11){return "Eleventh Grade";}
+        else if (ari_total==12){return "Twelfth grade";}
+        else if (ari_total==13){return "College student";}
+        else if (ari_total==14){return "Professor";}
     }
 }
