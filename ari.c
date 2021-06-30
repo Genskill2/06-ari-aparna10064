@@ -23,9 +23,7 @@ string ari(string s)
       sen++;
     }
   }
-  a1 = 4.71 * float((chara/words));
-  a2 = (0.5 * float((words/sen))) - 21.43;
-  ari_total = ceil(a1 + a2);
+  ari_total = ceil( 4.71 * ((float)chara/words) + 0.5*((float)words/sen) - 21.43) ;
  
 switch (ari_total) {
  case 1:
