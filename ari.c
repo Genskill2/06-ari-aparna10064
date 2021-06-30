@@ -6,12 +6,11 @@
 
 string ari(string s)
 {
-  int chara =0, words=0,sen=0, ari_total=0;
+  int chara = 0, words = 0, sen = 0, ari_total;
   float a1,a2;
-
   for(int i=0; i<=strlen(s) ; i++)
   {
-   if(isalnum(s[i])
+   if(isalnum(s[i]))
     {
      chara ++ ;
     }
@@ -24,7 +23,7 @@ string ari(string s)
      sen ++;
    }
   }
-  a1 = 4.71 * (chara/words) 
+  a1 = 4.71 * (chara/words) ;
   a2 = (0.5 * (words/sen)) - 21.43;
   ari_total = ceil(a1+a2);
  
