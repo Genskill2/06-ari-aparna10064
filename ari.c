@@ -6,8 +6,7 @@
 
 string ari(string s)
 {
-  int chara = 0, words = 0, sen = 0, ari_total;
-  float a1,a2;
+  int chara = 0, words = 0, sen = 0, ari_total=0;
   for(int i=0; i < strlen(s) ; i++)
   {
    if(isalnum(s[i]))
