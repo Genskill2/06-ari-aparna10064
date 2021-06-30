@@ -11,33 +11,33 @@ int main(void)
  float aris;
  string grade;
  string ari;
-  if(aris == 1)
+  if(score == 1)
    grade = "Kindergarten";
-  if(aris == 2)
+  if(score == 2)
    grade = "First/Second Grade";
-  if(aris == 3)
+  if(score== 3)
    grade = "Third Grade";
-  if(aris == 4)
+  if(score == 4)
    grade = "Fourth Grade";
-  if(aris == 5)
+  if(score == 5)
    grade = "Fifth Grade";
-  if(aris == 6)
+  if(score== 6)
    grade = "Sixth Grade";
-  if(aris == 7)
+  if(score == 7)
    grade = "Seventh Grade";
-  if(aris == 8)
+  if(score == 8)
    grade = "Eighth Grade";
-  if(aris == 9)
+  if(score == 9)
    grade = "Ninth Grade";
-  if(aris == 10)
+  if(score == 10)
    grade = "Tenth Grade";
-   if(aris == 11)
+   if(score == 11)
    grade = "Eleventh Grade";
-   if(aris == 12)
+   if(score== 12)
    grade = "Twelfth Grade";
-   if(aris == 13)
+   if(score == 13)
    grade = "College student";
-    if(aris == 14)
+    if(score == 14)
    grade = "Professor";
 return grade;
 }
@@ -47,19 +47,21 @@ string ari(string s)
   string chara,words,sen;
   float ari;
   s = get_string();
+  for(int i=0; i<=strlen(s) ; i++)
+  {
   if(isalnum(s[i])
   {
-    chara+=1;
+    chara += 1;
   }
-  if(s[i]==" ")
+  if(s[i] == " ")
   {
-    words +=1;
+    words += 1;
   }
   if(s[i] == '.' || s[i] == '?' || s[i] == ',' )
   {
-    sen +=1;
+    sen += 1;
   }
   aris = 4.71 * (chara/words) + 0.5 * (words/sen) - 21.43;
   int score = round(aris);
   }
-   
+  }
