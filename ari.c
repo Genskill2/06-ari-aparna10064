@@ -23,8 +23,8 @@ string ari(string s)
       sen++;
     }
   }
-  a1 = 4.71 * (chara/words);
-  a2 = (0.5 * (words/sen)) - 21.43;
+  a1 = 4.71 * float((chara/words));
+  a2 = (0.5 * float((words/sen))) - 21.43;
   ari_total = ceil(a1 + a2);
  
 switch (ari_total) {
