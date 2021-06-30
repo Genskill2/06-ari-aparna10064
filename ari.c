@@ -39,4 +39,4 @@ if (ari_total==1){return "Kindergarten";}
         else if (ari_total==13){return "College student";}
         else if (ari_total==14){return "Professor";}
     }
-}
+
