@@ -60,6 +60,6 @@ string ari(string s)
     sen +=1;
   }
   aris = 4.71 * (chara/words) + 0.5 * (words/sen) - 21.43;
-  int score = round(ari);
+  int score = round(aris);
   }
    
